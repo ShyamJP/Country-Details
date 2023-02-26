@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Data</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<style>
+    body{
+      background-image: linear-gradient(to right, yellow, white ,  rgb(0, 255, 247));
+    }
+    .card-body{
+      background-color: linear-gradient(to bottom , gray, white);
+    }
+</style>
+</head>
+
+<body>
+  <!-- <section>
+        <div class="container">
+            <input class="form-control" type="text" placeholder="Enter Country" id="country">
+            <button id="btn" onclick="data()">Get Data</button><br>
+            <h3><span>Capiatal : </span><span id="capital"></span></h3>
+            <h3><span>Language : </span><span id="language"></span></h3>
+            <h3><span>Region   : </span><span id="region"></span></h3>
+            <h3><span>TimeZone : </span><span id="timezone"></span></h3>
+            <p id="language"></p>
+            <p id="region"></p>
+            <p id="timezone"></p>
+            <img id="img" alt="Flag image"> 
+            <a id="map" target="_blank"><i class="fa-duotone fa-location-dot"></i></a>
+        </div>
+        <div>
+            <button id="captal">Map</button>
+        </div>
+    </section>  -->
+
+  <!-- card -->
+  <div class="container w-50">
+    <div class="card mb-3 bg-secondary text-light">
+
+      <input class="form-control mt-3 text-xl-start" type="text" placeholder="Enter Country" id="country">
+  
+      <div class="container text-center my-4">
+        <button type="button" id="btn" onclick="data()" class="btn btn-outline-light">Get Information</button>
+      </div>
+
+      <img id="img" class="card-img-top rounded mx-auto d-block w-25 my-3" alt="">
+      <div class="card-body ">
+        <p class="card-text">
+          <div class="container">
+            
+            <h5 class="card-title" id="cname"></h5>
+          <!-- <button id="btn" onclick="data()">Get Data</button><br> -->
+          <h3><span>Capiatal : </span><span id="capital"></span></h3>
+          <h3><span>Language : </span><span id="language"></span></h3>
+          <h3><span>Region : </span><span id="region"></span></h3>
+          <h3><span>TimeZone : </span><span id="timezone"></span></h3>
+          <p id="language"></p>
+          <p id="region"></p>
+          <p id="timezone"></p>
+          <!-- <img id="img" alt="Flag image"> -->
+          
+          
+          <a id="map" target="_blank" class="text-center"><h2>Location<i class="fa-solid fa-location-dot"></i></h2></a>
+        </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+  integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</html>
+
+
+<!-- githu
+PS E:\projects> cd '.\country data API\'
+PS E:\projects\country data API> git init
+Initialized empty Git repository in E:/projects/country data API/.git/
+PS E:\^C jects\country data API>
+PS E:\projects\country data API> git add .
+PS E:\projects\country data API> git commit -m 'First commit'
+Author identity unknown
+
+*** Please tell me who you are.
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'SHYAM PANKHANIYA@DESKTOP-MOLM199.(none)')
+PS E:\projects\country data API>  git config --global user.email "shyam.j.panhaniya05@gmail.com"
+PS E:\projects\country data API> git config --global user.name "Shyam Pankhaniya"     
+PS E:\projects\country data API> git commit -m 'First commit'
+[master (root-commit) ab9e074] First commit
+ 3 files changed, 118 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 script.js
+ create mode 100644 style.css
+-->
