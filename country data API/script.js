@@ -15,7 +15,7 @@ btn.addEventListener('click',() => {console.log(input.value)});
 
 function data()
 {
-    fetch(`https://restcountries.com/v3.1/name/${input.value}?fulltext = true`)
+    fetch(`API`)
     .then(res => res.json())
     .then(data=>{
         console.log(data);
